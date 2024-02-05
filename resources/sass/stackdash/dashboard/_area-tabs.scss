@@ -1,0 +1,26 @@
+.dashboard-area-tabs {
+  &__tab {
+    display: flex;
+    flex-direction: column;
+
+    @include hover {
+      text-decoration: none;
+    }
+
+    .text-label-large {
+      color: map-get($theme-colors, "muted-light");
+    }
+
+    &:not(.active) {
+      background-color: map-get($theme-colors, "light-gray");
+
+      .text-amount {
+        color: map-get($theme-colors, "dark-gray");
+      }
+    }
+
+    &.active .text-label-large {
+      color: $primary;
+    }
+  }
+}

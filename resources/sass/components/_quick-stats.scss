@@ -1,0 +1,15 @@
+.quick-stats {
+	width: calc(100% - 110px);
+
+  &__item {
+    display: block;
+  }
+}
+
+.bg-approved {
+	background: #43c512 !important;
+}
+
+.bg-rejected {
+	background: #e82250 !important;
+}

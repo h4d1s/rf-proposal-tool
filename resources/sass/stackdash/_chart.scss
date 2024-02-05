@@ -1,0 +1,62 @@
+.chart {
+  position: relative;
+  min-height: 300px;
+}
+
+.chart-legend {
+  display: flex;
+  margin-top: 2.5rem;
+  white-space: nowrap;
+  justify-content: center;
+
+  &-item {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+
+  &:not(&--vertical) {
+    .chart-legend-item + .chart-legend-item {
+      margin-left: 1rem;
+    }
+  }
+
+  &--vertical {
+    flex-direction: column;
+  }
+}
+
+.chart-legend-indicator {
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+}
+
+#chart-tooltip {
+  z-index: 0;
+  pointer-events: none;
+}
+
+#chart-tooltip .arrow {
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateX(-0.5rem);
+}
+
+.popover-header {
+  border-bottom: 0;
+}
+
+.popover-body-label,
+.popover-body-value {
+  margin-left: 0.25rem;
+}
+
+.popover-body-indicator {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+}

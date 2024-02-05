@@ -1,0 +1,28 @@
+.badge {
+  box-sizing: border-box;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.badge-light-gray {
+  color: rgba(#66768a, 0.4);
+}
+
+.badge-notifications {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.4rem;
+}
+
+@each $color, $value in $theme-colors {
+  .badge-soft-#{$color} {
+    color: darken($value, 5%);
+    background-color: rgba($value, 0.1);
+  }
+}
+
+.badge-lg {
+  font-size: 1.8rem;
+  padding: 0.5rem 1rem;
+}

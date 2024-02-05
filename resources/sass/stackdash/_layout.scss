@@ -1,0 +1,35 @@
+html,
+body {
+  height: 100%;
+  position: relative;
+}
+
+.page__header {
+  background: white;
+  box-shadow: 0 5px 15px 0 rgba(227, 227, 227, 0.5);
+  margin-bottom: $grid-gutter-width/2;
+
+  @include media-breakpoint-up(xl) {
+    margin-bottom: $grid-gutter-width;
+  }
+
+  z-index: 3;
+
+  & + .page__header {
+    z-index: 2;
+  }
+
+  position: relative;
+}
+
+
+.page__heading {
+  h1 {
+    line-height: 1;
+  }
+
+  border-bottom: 1px solid $border-color;
+  margin-bottom: $grid-gutter-width/2;
+  padding-top: $grid-gutter-width /2;
+  padding-bottom: $grid-gutter-width/2;
+}

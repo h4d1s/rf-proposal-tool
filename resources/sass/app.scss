@@ -1,0 +1,56 @@
+@import "common/variables";
+@import "stackdash/variables";
+
+/**
+ * Import dependencies
+ */
+@import "~bootstrap/scss/bootstrap";
+
+$fa-font-path:"~fortawesome/fontawesome-free/webfonts";
+@import "~fortawesome/fontawesome-free/scss/fontawesome";
+@import "~fortawesome/fontawesome-free/scss/regular";
+@import "~fortawesome/fontawesome-free/scss/solid";
+@import "~fortawesome/fontawesome-free/scss/brands";
+
+@import "~flatpickr/dist/flatpickr.min.css";
+@import "~flatpickr/dist/plugins/monthSelect/style.css";
+
+@import "~vue-select/dist/vue-select.css";
+@import "~swiper/swiper-bundle.css";
+
+@import "custom";
+@import "components/item";
+@import "components/table";
+@import "components/quick-stats";
+@import "components/scrollable";
+
+@import "pages/proposal/view.scss";
+
+@import "vendor/vue-select";
+@import "vendor/swiper";
+
+/** Stackdash */
+@import "stackdash/mixins/border-radius";
+@import "stackdash/alert";
+@import "stackdash/avatar";
+@import "stackdash/card";
+@import "stackdash/chart";
+@import "stackdash/badge";
+@import "stackdash/buttons";
+@import "stackdash/dropdown";
+@import "stackdash/form";
+@import "stackdash/input-group";
+@import "stackdash/list-group";
+@import "stackdash/layout";
+@import "stackdash/login";
+@import "stackdash/navbar";
+@import "stackdash/navbar-dark";
+@import "stackdash/navbar-light";
+@import "stackdash/loader";
+@import "stackdash/table";
+@import "stackdash/type";
+@import "stackdash/tabs";
+@import "stackdash/pagination";
+@import "stackdash/progress";
+@import "stackdash/skills";
+@import "stackdash/stories";

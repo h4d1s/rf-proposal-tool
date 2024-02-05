@@ -1,0 +1,28 @@
+.rf-item {
+    position: relative;
+    transition: transform 0.3s;
+  
+    &.is-selected .rf-toggle {
+      display: block;
+    }
+  
+    &.selectable {
+      cursor: pointer;
+  
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  
+    .rf-toggle {
+      display: none;
+      position: absolute;
+      color: #fff;
+      padding: 0.5rem;
+  
+      .material-icons {
+        font-size: 24px;
+      }
+    }
+  } 
+  

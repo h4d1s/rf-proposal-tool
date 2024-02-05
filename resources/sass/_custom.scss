@@ -1,0 +1,27 @@
+/* UTILS */
+
+/* Collections products card */
+
+.rf-products-gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  width: 100%;
+
+  &-sm {
+    min-height: 40px !important;
+  }
+}
+
+.rf-products-gallery,
+.rf-items-card {
+  min-height: 120px !important;
+}
+
+/* Collections modal */
+
+.rf-items-sm .card {
+  height: 150px;
+  overflow: hidden;
+}
