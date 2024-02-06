@@ -59,5 +59,5 @@
 @endsection
 
 @push('scripts')
-  @vite('resources/js/pages/auth/sign-up.js')
+  @vite('resources/js/pages/auth/sign-up.ts')
 @endpush
