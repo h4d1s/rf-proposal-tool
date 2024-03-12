@@ -33,7 +33,7 @@ class CollectionPolicy
         $permission = Permission::with('roles')->where('slug', 'view_collection')->first();
         $team_id = $user->team->id;
 
-        return $user->hasPermissionTo($permission) && $collection->team_id === $team_id;
+        return $user->hasPermissionTo($permission) && $collection->team->id === $team_id;
     }
 
     /**

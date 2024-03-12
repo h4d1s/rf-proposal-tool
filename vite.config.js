@@ -43,6 +43,8 @@ export default defineConfig({
 
                 'resources/js/pages/proposals/edit.ts',
                 'resources/js/pages/proposals/index.ts',
+                'resources/js/pages/proposals/create.ts',
+                'resources/js/pages/proposals/show.ts',
 
                 'resources/js/pages/users/create.ts',
                 'resources/js/pages/users/edit.ts',

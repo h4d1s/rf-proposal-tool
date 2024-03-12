@@ -14,7 +14,7 @@ class ApiEmailTemplateController extends Controller
      */
     public function __construct()
     {
-        $this->authorizeResource(EmailTemplate::class, 'emailTemplate');
+        $this->authorizeResource(EmailTemplate::class, 'email_template');
     }
 
     /**
@@ -22,9 +22,9 @@ class ApiEmailTemplateController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function show(EmailTemplate $emailTemplate)
+    public function show(EmailTemplate $email_template)
     {
-        return EmailTemplateResource::collection(EmailTemplate::where('id', $emailTemplate->id)->get());
+        return EmailTemplateResource::collection(EmailTemplate::where('id', $email_template->id)->get());
     }
 
     /**
